@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Residential Tenancy Agreement</title>
+<style>
+  @page {
+    size: A4;
+    margin: 15mm 15mm 15mm 15mm;
+  }
+  body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    color: #000;
+    line-height: 1.4;
+    counter-reset: page;
+  }
+  .container {
+    padding: 15mm;
+    box-sizing: border-box;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 12pt;
+  }
+  .title {
+    font-size: 16pt;
+    font-weight: bold;
+    letter-spacing: 0.5pt;
+  }
+  .subtitle {
+    font-size: 11pt;
+    margin-top: 2pt;
+  }
+  .property-address {
+    font-size: 10pt;
+    margin-top: 6pt;
+  }
+  .section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 12pt;
+    border: 1px solid #000;
+  }
+  .section-title {
+    background: #f2f2f2;
+    padding: 6pt 8pt;
+    font-size: 11pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    page-break-inside: avoid;
+  }
+  th, td {
+    padding: 6pt 8pt;
+    vertical-align: top;
+    border: 1px solid #000;
+  }
+  th {
+    background: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+  }
+  .label {
+    width: 35%;
+    font-weight: bold;
+  }
+  .notes {
+    padding: 8pt;
+  }
+  ul {
+    margin: 0;
+    padding-left: 16pt;
+  }
+  .footer {
+    position: fixed;
+    bottom: 10mm;
+    left: 15mm;
+    right: 15mm;
+    font-size: 8pt;
+    border-top: 1px solid #000;
+    padding-top: 4pt;
+    display: flex;
+    justify-content: space-between;
+  }
+  .page-number:after {
+    content: "Page " counter(page) " of " counter(pages);
+  }
+  @media print {
+    body {
+      padding: 0;
+    }
+    .container {
+      padding: 0;
+    }
+    .footer {
+      position: fixed;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="title">RESIDENTIAL TENANCY AGREEMENT</div>
+    <div class="subtitle">Short-Term Lease – NSW</div>
+    <div class="property-address">Unit 13, 1-3 Vicar Street, Coogee, NSW 2034</div>
+  </header>
+
+  <div class="section">
+    <div class="section-title">Document Information</div>
+    <table>
+      <tr><td class="label">Document Type</td><td>Short term residential lease description</td></tr>
+      <tr><td class="label">Jurisdiction</td><td>NSW, Australia</td></tr>
+      <tr><td class="label">Governing Law</td><td>Residential Tenancies Act 2010 (NSW) and Residential Tenancies Regulation 2019 (NSW)</td></tr>
+      <tr><td class="label">Version</td><td>1.0</td></tr>
+      <tr><td class="label">Notes</td><td>Date: 2025-12-06 to 2026-02-15</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Parties</div>
+    <table>
+      <tr><th colspan="2">Landlord</th></tr>
+      <tr><td class="label">Name</td><td></td></tr>
+      <tr><td class="label">Phone</td><td></td></tr>
+      <tr><td class="label">Email</td><td></td></tr>
+      <tr><th colspan="2">Tenant</th></tr>
+      <tr><td class="label">Name</td><td></td></tr>
+      <tr><td class="label">Phone</td><td></td></tr>
+      <tr><td class="label">Email</td><td></td></tr>
+      <tr><th colspan="2">Additional Occupant</th></tr>
+      <tr><td class="label">Allowed</td><td>Yes (maximum total occupants: 2)</td></tr>
+      <tr><td class="label">Details</td><td>Studio is priced for 1 person at base rent. A second person is allowed at a higher weekly rent.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Premises</div>
+    <table>
+      <tr><td class="label">Address</td><td>Unit 13, 1-3 Vicar Street, Coogee, NSW 2034</td></tr>
+      <tr><td class="label">Type</td><td>Furnished studio apartment</td></tr>
+      <tr><td class="label">Kitchen</td><td>Private kitchen in studio</td></tr>
+      <tr><td class="label">Bathroom</td><td>Shared bathroom outside studio</td></tr>
+      <tr><td class="label">Furnishings</td><td>Queen-size sofa bed; basic kitchen facilities (stove/cooktop, fridge, sink, storage); other inclusions to be listed in a simple condition/inventory report</td></tr>
+      <tr><td class="label">Pet Policy</td><td>Pets allowed with landlord consent. Tenant responsible for any damage and additional cleaning if required. Tenant may keep reasonable, house-trained pets with landlord’s consent.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Term</div>
+    <table>
+      <tr><td class="label">Type</td><td>Fixed term</td></tr>
+      <tr><td class="label">Start Date</td><td>6 December 2025</td></tr>
+      <tr><td class="label">End Date</td><td>15 February 2026</td></tr>
+      <tr><td class="label">Weeks Charged</td><td>10 weeks</td></tr>
+      <tr><td class="label">Notes</td><td>Lease period includes one extra day beyond 10 weeks. Rent is only charged for 10 weeks in total not that exta day (Sunday 15 February).</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Rent</div>
+    <table>
+      <tr><td class="label">Payment Frequency</td><td>Weekly in advance</td></tr>
+      <tr><td class="label">Weekly Rent (Single Occupant)</td><td>AUD 350</td></tr>
+      <tr><td class="label">Weekly Rent (Two Occupants)</td><td>AUD 450</td></tr>
+      <tr><td class="label">Total Rent for Fixed Term (Single)</td><td>AUD 3,500</td></tr>
+      <tr><td class="label">Total Rent for Fixed Term (Two)</td><td>AUD 4,500</td></tr>
+      <tr><td class="label">Rent Due Day</td><td>Saturday from 6/12/2025</td></tr>
+      <tr><td class="label">Payment Methods</td><td>Bank transfer; other method by mutual agreement</td></tr>
+      <tr><td class="label">Late Payment</td><td>Rent must be received by the agreed due date each week. Persistent late payment may be treated as a breach of the agreement under NSW law.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Bond</div>
+    <table>
+      <tr><td class="label">Bond Required</td><td>Yes (two weeks' rent)</td></tr>
+      <tr><td class="label">Amount (Single Occupant)</td><td>AUD 700</td></tr>
+      <tr><td class="label">Amount (Two Occupants)</td><td>AUD 900</td></tr>
+      <tr><td class="label">Payable</td><td>Bond must be paid to secure the place</td></tr>
+      <tr><td class="label">Handling</td><td>Bond is to be lodged and managed in accordance with NSW requirements (e.g. NSW Fair Trading Rental Bonds Online).</td></tr>
+      <tr><td class="label">Refund Summary</td><td>Bond may be used to cover unpaid rent, damage beyond fair wear and tear, or extra cleaning if the place is not left reasonably clean and similar in condition to move-in photos.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Initial Payment</div>
+    <table>
+      <tr><td class="label">Description</td><td>Bond (2 weeks) + first week of rent must be paid upfront to secure the place.</td></tr>
+      <tr><td class="label">Total (Weeks Equivalent)</td><td>3 weeks</td></tr>
+      <tr><td class="label">Amount (Single Occupant)</td><td>AUD 1,050</td></tr>
+      <tr><td class="label">Amount (Two Occupants)</td><td>AUD 1,350</td></tr>
+      <tr><td class="label">Components</td><td>2 weeks rent as bond; 1 week rent in advance</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Utilities and Bills</div>
+    <table>
+      <tr><td class="label">Included in Rent</td><td>Electricity; water</td></tr>
+      <tr><td class="label">Excluded from Rent</td><td>Gas canisters for cooking or heating</td></tr>
+      <tr><td class="label">Gas Canisters</td><td>Any gas canisters (for portable stoves or heaters) must be purchased and replaced by the tenant at their own cost.</td></tr>
+      <tr><td class="label">Other Utilities</td><td>Tenant pays for any optional additional services they choose to set up themselves, such as internet or streaming services.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Condition and Photos</div>
+    <table>
+      <tr><td class="label">Pre Move-In Record</td><td>Landlord will take clear photos and/or short videos of the studio and its contents before the tenant moves in, showing the general condition and cleanliness.</td></tr>
+      <tr><td class="label">Start Condition</td><td>Studio is provided clean, functional, and in good working order, with furniture and appliances as agreed.</td></tr>
+      <tr><td class="label">End Condition</td><td>The studio should be left reasonably clean and in a condition broadly similar to the move-in photos, allowing for fair wear and tear.</td></tr>
+      <tr><td class="label">Tenant Cleaning Obligations</td><td><ul><li>Keep the studio reasonably clean during the tenancy.</li><li>Remove all rubbish and personal items at the end of the lease.</li><li>Return furniture and items to their original place where practical.</li></ul></td></tr>
+      <tr><td class="label">Landlord Obligations</td><td><ul><li>Ensure the studio is reasonably clean at the start of the lease.</li><li>Ensure utilities included in rent are in working order at the start of the lease.</li></ul></td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Use and Occupancy</div>
+    <table>
+      <tr><td class="label">Permitted Use</td><td>Residential only</td></tr>
+      <tr><td class="label">Subletting</td><td>Tenant must not sublet, licence, or rent out the studio (for example via Airbnb or similar platforms) without written permission from the landlord.</td></tr>
+      <tr><td class="label">Noise & Behaviour</td><td><ul><li>No illegal activities on the premises.</li><li>Respect neighbours’ peace and quiet, especially at night.</li><li>No parties or loud gatherings that cause complaints or breach building rules.</li></ul></td></tr>
+      <tr><td class="label">Shared Facilities</td><td>Bathroom is shared with other residents. Tenant must keep shared areas reasonably clean and use them respectfully.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Repairs and Maintenance</div>
+    <table>
+      <tr><td class="label">Tenant Responsibilities</td><td><ul><li>Notify landlord promptly of any damage or issues.</li><li>Take reasonable care of furniture, appliances and fittings.</li><li>Replace consumables such as light globes and gas canisters used by the tenant.</li></ul></td></tr>
+      <tr><td class="label">Landlord Responsibilities</td><td><ul><li>Ensure the premises are safe, reasonably clean and fit to live in at the start of the lease.</li><li>Carry out necessary repairs within a reasonable time after being notified.</li></ul></td></tr>
+      <tr><td class="label">Urgent Repairs</td><td>Serious leaks, electrical faults, or anything that makes the premises unsafe should be reported immediately so the landlord can arrange urgent repairs.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Access and Inspections</div>
+    <table>
+      <tr><td class="label">Access Summary</td><td>Landlord may access the premises for inspections, repairs or emergencies in line with NSW notice requirements (e.g. reasonable notice for inspections, immediate access for emergencies).</td></tr>
+      <tr><td class="label">Routine Inspections</td><td>Routine inspections should be reasonable and in line with NSW guidelines (e.g. not excessive for a 10-week term).</td></tr>
+      <tr><td class="label">Notice</td><td>Landlord to give reasonable written notice before any non-emergency entry.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">End of Lease</div>
+    <table>
+      <tr><td class="label">Vacate</td><td>Tenant must vacate on or before the agreed end date (15 February), unless both parties agree in writing to extend or vary the term.</td></tr>
+      <tr><td class="label">Key Return</td><td>All keys and access devices must be returned on the final day of the lease.</td></tr>
+      <tr><td class="label">Final Inspection</td><td>Landlord and tenant may do a walkthrough using the original photos and any written condition notes to compare condition and discuss bond return.</td></tr>
+      <tr><td class="label">Examples of Bond Deductions</td><td><ul><li>Unpaid rent.</li><li>Significant damage beyond fair wear and tear.</li><li>Excess cleaning required due to the studio being left in a very dirty state.</li></ul></td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">House Rules and Building Rules</div>
+    <table>
+      <tr><td class="label">Reference</td><td>Tenant agrees to follow any reasonable building or strata rules that apply to the property (e.g. no smoking in common areas, rules for rubbish and recycling, quiet hours).</td></tr>
+      <tr><td class="label">Key Rules</td><td><ul><li>Dispose of rubbish in the correct bins and on the correct nights.</li><li>Respect shared spaces such as hallways and bathroom.</li><li>No storage of flammable or dangerous items in the studio or common areas.</li></ul></td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Signing and Execution</div>
+    <table>
+      <tr>
+        <th>Landlord</th>
+        <th>Tenant</th>
+      </tr>
+      <tr>
+        <td>
+          Name: ________________________________<br><br>
+          Signature: ___________________________<br><br>
+          Date: ________________________________
+        </td>
+        <td>
+          Name: ________________________________<br><br>
+          Signature: ___________________________<br><br>
+          Date: ________________________________
+        </td>
+      </tr>
+    </table>
+    <div class="notes">
+      Signature methods: in person; electronic signature if both parties agree. Any previous professional lease documents (e.g. agency or Krulis-branded forms) are not part of this description. This is a simplified summary for a private short-term arrangement.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Disclaimer</div>
+    <div class="notes" style="font-size:9pt;">
+      This is a descriptive template of a short-term lease arrangement in NSW. It is not formal legal advice or a complete residential tenancy agreement. The landlord and tenant should check NSW tenancy requirements and consider seeking legal or tenancy advice before relying on this as a binding contract.
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div>Unit 13, 1-3 Vicar Street, Coogee, NSW 2034</div>
+  <div class="page-number"></div>
+</footer>
+</body>
+</html>
