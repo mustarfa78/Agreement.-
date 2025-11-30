@@ -1,0 +1,247 @@
+{
+  "metadata": {
+    "document_type": "short_term_residential_lease_description",
+    "jurisdiction": "NSW, Australia",
+    "governing_law_reference": "Residential Tenancies Act 2010 (NSW) and Residential Tenancies Regulation 2019 (NSW)",
+    "version": "1.1",
+    "notes": "Template description only. Fixed-term short stay lease. Dates assumed to be 2025-12-06 to 2026-02-15; adjust if different."
+  },
+
+  "layout_preferences": {
+    "style_reference": "NSW REINSW residential tenancy agreement layout, unbranded",
+    "page_size": "A4",
+    "page_margins_mm": {
+      "top": 15,
+      "right": 15,
+      "bottom": 15,
+      "left": 15
+    },
+    "font_family": "Arial, Helvetica, sans-serif",
+    "font_size_body_pt": 10,
+    "font_size_heading_pt": 12,
+    "no_rounded_corners": true,
+    "section_page_break_policy": {
+      "avoid_page_break_inside_sections": true,
+      "avoid_page_break_inside_tables": true,
+      "css_hints": [
+        "page-break-inside: avoid;",
+        "break-inside: avoid;",
+        "page-break-after: always; (only when an explicit manual break is needed)"
+      ]
+    },
+    "table_style": {
+      "borders": "1px solid #000000",
+      "header_fill": "#f2f2f2",
+      "row_striping": false
+    },
+    "header_footer": {
+      "show_property_address_in_footer": true,
+      "show_page_numbers": true,
+      "document_title": "RESIDENTIAL TENANCY AGREEMENT"
+    }
+  },
+
+  "parties": {
+    "landlord": {
+      "name": null,
+      "contact_phone": null,
+      "contact_email": null
+    },
+    "tenant": {
+      "name": null,
+      "contact_phone": null,
+      "contact_email": null
+    },
+    "additional_occupant": {
+      "allowed": true,
+      "max_occupants_total": 2,
+      "description": "Studio is priced for 1 person at base rent. A second person is allowed at a higher weekly rent."
+    }
+  },
+
+  "premises": {
+    "address_line": "Unit 13, 1-3 Vicar Street",
+    "suburb": "Coogee",
+    "state": "NSW",
+    "postcode": "2034",
+    "type": "furnished studio apartment",
+    "kitchen": "private_kitchen_in_studio",
+    "bathroom": "shared_bathroom_outside_studio",
+    "furnishings_description": [
+      "queen-size sofa bed",
+      "basic kitchen facilities (stove/cooktop, fridge, sink, storage)",
+      "other inclusions to be listed in a simple condition/inventory report"
+    ],
+    "pet_policy": {
+      "pets_allowed": true,
+      "notes": "Tenant may keep reasonable, house-trained pets with landlord’s consent. Tenant responsible for any damage caused by pets and additional cleaning if required."
+    }
+  },
+
+  "term": {
+    "type": "fixed_term",
+    "start_date": "2025-12-06",
+    "end_date": "2026-02-15",
+    "total_days_inclusive": 72,
+    "weeks_charged": 10,
+    "extra_days_not_charged_note": "Lease period includes extra days beyond 10 weeks; rent is only charged for 10 weeks in total."
+  },
+
+  "rent": {
+    "currency": "AUD",
+    "payment_frequency": "weekly_in_advance",
+    "weekly_rent_single_occupant": 350,
+    "weekly_rent_two_occupants": 450,
+    "due_day_of_week": "to_be_agreed",
+    "payment_methods": [
+      "bank_transfer",
+      "other_method_by_mutual_agreement"
+    ],
+    "total_rent_for_fixed_term": {
+      "single_occupant": 3500,
+      "two_occupants": 4500
+    },
+    "late_payment": {
+      "grace_period_days": 0,
+      "description": "Rent must be received by the agreed due date each week. Persistent late payment may be treated as a breach of the agreement under NSW law."
+    }
+  },
+
+  "bond": {
+    "required": true,
+    "basis": "two_weeks_rent",
+    "amount_single_occupant": 700,
+    "amount_two_occupants": 900,
+    "payable_when": "bond_must_be_paid_to_secure_the_place",
+    "handling": {
+      "lodgement": "Bond is to be lodged and managed in accordance with NSW requirements (e.g. NSW Fair Trading Rental Bonds Online).",
+      "refund_conditions_summary": "Bond may be used to cover unpaid rent, damage beyond fair wear and tear, or extra cleaning if the place is not left reasonably clean and similar in condition to move-in photos."
+    }
+  },
+
+  "initial_payment": {
+    "description": "Bond (2 weeks) + first week of rent must be paid upfront to secure the place.",
+    "total_weeks_equivalent": 3,
+    "single_occupant_total_amount": 1050,
+    "two_occupants_total_amount": 1350,
+    "components": [
+      "2 weeks rent as bond",
+      "1 week rent in advance"
+    ]
+  },
+
+  "utilities_and_bills": {
+    "bills_included_in_rent": [
+      "electricity",
+      "water"
+    ],
+    "bills_excluded_from_rent": [
+      "gas_canisters_for_cooking_or_heating"
+    ],
+    "tenant_responsibilities": {
+      "gas_canisters": "Any gas canisters (for portable stoves or heaters) must be purchased and replaced by the tenant at their own cost.",
+      "other_utilities": "Tenant pays for any optional additional services they choose to set up themselves, such as internet or streaming services."
+    }
+  },
+
+  "condition_and_photos": {
+    "pre_move_in_photos": {
+      "required": true,
+      "description": "Landlord will take clear photos and/or short videos of the studio and its contents before the tenant moves in, showing the general condition and cleanliness."
+    },
+    "condition_expectation": {
+      "start_condition_summary": "Studio is provided clean, functional, and in good working order, with furniture and appliances as agreed.",
+      "end_condition_requirement": "At the end of the lease, the studio should be left reasonably clean and in a condition broadly similar to the move-in photos, allowing for fair wear and tear."
+    },
+    "cleaning_obligations": {
+      "tenant": [
+        "keep the studio reasonably clean during the tenancy",
+        "remove all rubbish and personal items at the end of the lease",
+        "return furniture and items to their original place where practical"
+      ],
+      "landlord": [
+        "ensure the studio is reasonably clean at the start of the lease",
+        "ensure utilities included in rent are in working order at the start of the lease"
+      ]
+    }
+  },
+
+  "use_and_occupancy": {
+    "permitted_use": "residential_only",
+    "short_stay_or_airbnb_subletting": {
+      "allowed": false,
+      "description": "Tenant must not sublet, licence, or rent out the studio (for example via Airbnb or similar platforms) without written permission from the landlord."
+    },
+    "noise_and_behaviour": {
+      "requirements": [
+        "no illegal activities on the premises",
+        "respect neighbours’ peace and quiet, especially at night",
+        "no parties or loud gatherings that cause complaints or breach building rules"
+      ]
+    },
+    "shared_bathroom_note": "Bathroom is shared with other residents. Tenant must keep shared areas reasonably clean and use them respectfully."
+  },
+
+  "repairs_and_maintenance": {
+    "tenant_responsibilities": [
+      "notify landlord promptly of any damage or issues",
+      "take reasonable care of furniture, appliances and fittings",
+      "replace consumables such as light globes and gas canisters used by the tenant"
+    ],
+    "landlord_responsibilities": [
+      "ensure the premises are safe, reasonably clean and fit to live in at the start of the lease",
+      "carry out necessary repairs within a reasonable time after being notified"
+    ],
+    "urgent_repairs_example_description": "Serious leaks, electrical faults, or anything that makes the premises unsafe should be reported immediately so the landlord can arrange urgent repairs."
+  },
+
+  "access_and_inspections": {
+    "landlord_access_rules_summary": "Landlord may access the premises for inspections, repairs or emergencies in line with NSW notice requirements (e.g. reasonable notice for inspections, immediate access for emergencies).",
+    "routine_inspections": {
+      "maximum_frequency_note": "Routine inspections should be reasonable and in line with NSW guidelines (e.g. not excessive for a 10-week term).",
+      "notice_requirement_summary": "Landlord to give reasonable written notice before any non-emergency entry."
+    }
+  },
+
+  "end_of_lease": {
+    "notice_to_vacate": {
+      "tenant_responsibility": "Tenant must vacate on or before the agreed end date (15 February), unless both parties agree in writing to extend or vary the term.",
+      "key_return": "All keys and access devices must be returned on the final day of the lease."
+    },
+    "final_inspection": {
+      "process_summary": "Landlord and tenant may do a walkthrough using the original photos and any written condition notes to compare condition and discuss bond return.",
+      "bond_deductions_examples": [
+        "unpaid rent",
+        "significant damage beyond fair wear and tear",
+        "excess cleaning required due to the studio being left in a very dirty state"
+      ]
+    }
+  },
+
+  "house_rules_and_building_rules": {
+    "reference": "Tenant agrees to follow any reasonable building or strata rules that apply to the property (e.g. no smoking in common areas, rules for rubbish and recycling, quiet hours).",
+    "specific_examples": [
+      "dispose of rubbish in the correct bins and on the correct nights",
+      "respect shared spaces such as hallways and bathroom",
+      "no storage of flammable or dangerous items in the studio or common areas"
+    ]
+  },
+
+  "signing_and_execution": {
+    "signatures_required": [
+      "landlord_signature",
+      "tenant_signature"
+    ],
+    "signature_methods": [
+      "in_person",
+      "electronic_signature_if_both_parties_agree"
+    ],
+    "date_of_agreement": null,
+    "notes": "Any previous professional lease documents (e.g. agency or branded forms) are not part of this JSON description. This JSON is a simplified summary for a private short-term arrangement."
+  },
+
+  "disclaimer": {
+    "type": "non_legal_advice",
+    "text": "This JSON is a descriptive template of a short-term lease arrangement in NSW. It is not formal legal advice or a complete residential tenancy agreement. The landlord and tenant should check NSW tenancy requirements and consider seeking legal or tenancy advice before relying on this as a binding contract."
+  }
+}
